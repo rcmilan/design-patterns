@@ -10,6 +10,6 @@ namespace AbstractFactory.ConcreteFactories
     {
         public ICar CreateCar() => new Car { Model = "Modern Modern", Color = Color.Blue, Type = "Modern" };
 
-        public IPerson CreatePerson() => new Person { Name = "Modern Person Jr.", BirthDate = DateTime.Now, Job = "Modern Job" };
+        public IPerson CreatePerson() => new Person { FirstName = "Modern Person Jr.", BirthDate = DateTime.Now, Job = "Modern Job" };
     }
 }

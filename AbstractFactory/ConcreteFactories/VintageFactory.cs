@@ -15,7 +15,7 @@ namespace AbstractFactory.ConcreteFactories
 
         public IPerson CreatePerson()
         {
-            return new Person { Name = "Vintage Person Sr.", BirthDate = DateTime.Now, Job = "Old Labour" };
+            return new Person { FirstName = "Vintage Person Sr.", BirthDate = DateTime.Now, Job = "Old Labour" };
         }
     }
 }
