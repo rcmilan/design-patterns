@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace Domain.Models
 {
-    public class Car : BaseModel<Guid>, ICar
+    public class Car : BaseModel<Guid>, ICar, IVehicle
     {
         public Car()
         {
@@ -30,10 +30,9 @@ namespace Domain.Models
         public int Year { get; set; }
         public string Engine { get; set; }
         public string Type { get; set; }
-
-        public void Drive()
+        public string Drive()
         {
-            Console.WriteLine($"{this.Model}: Drive!!!!");
+            return $"{this.Model} Drive!!!!";
         }
     }
 }

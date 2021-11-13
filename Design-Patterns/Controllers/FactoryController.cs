@@ -5,6 +5,7 @@ using Domain.Models;
 using Factory.ConcreteCreators;
 using Factory.Creators;
 using Microsoft.AspNetCore.Mvc;
+using System.Drawing;
 
 namespace DesignPatterns.Controllers
 {
@@ -32,7 +33,7 @@ namespace DesignPatterns.Controllers
             }
 
             // o resultado é um tipo concreto
-            var result = _factory.Create("Modelo", "Cor");
+            var result = _factory.Create("Modelo", Color.Red);
 
             return Ok(result);
         }
@@ -60,22 +61,13 @@ namespace DesignPatterns.Controllers
             var person = _abstractFactory.CreatePerson();
             var car = _abstractFactory.CreateCar();
 
-            var result = new StructResponse(car, person);
+            var result = new StructResponse((Car)car, (Person)person);
 
             return Ok(result);
         }
 
         // apenas para ajudar a retornar as coisas
-        public struct StructResponse
-        {
-            public StructResponse(ICar car, IPerson person)
-            {
-                Car = car;
-                Person = person;
-            }
+        public record StructResponse(Car Car, Person Person);
 
-            public ICar Car { get; private set; }
-            public IPerson Person { get; private set; }
-        }
     }
 }
