@@ -19,6 +19,7 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Factory\Factory.csproj" />
     <ProjectReference Include="..\Iterator\Iterator.csproj" />
+    <ProjectReference Include="..\Mediator\Mediator.csproj" />
   </ItemGroup>
 
 </Project>
