@@ -1,17 +1,16 @@
-﻿using Domain.Models;
+﻿using Domain.Base;
 using Iterator.Container;
 using Iterator.Interfaces;
 using Iterator.Iterators;
-using System;
 
 namespace Iterator.Collections
 {
-    public class CarIteratorRepository : IterableCollection<Car, Guid>
+    public class IteratorRepository<T, Id> : IterableCollection<T, Id> where T : BaseModel<Id>
     {
         // repository apenas para retornar uma nova instancia do iterator
-        public IIteratable<Car, Guid> GetIterator()
+        public IIteratable<T, Id> GetIterator()
         {
-            return new CarIterator();
+            return new ConcreteIterator<T, Id>();
         }
     }
 }

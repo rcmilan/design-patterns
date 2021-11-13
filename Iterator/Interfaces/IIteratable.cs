@@ -9,5 +9,6 @@ namespace Iterator.Interfaces
         public bool HasNext();
         public T GetNext();
         void Add(IList<T> objects);
+        public List<T> GetOrdered();
     }
 }

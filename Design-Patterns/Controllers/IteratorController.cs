@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("behavioral/[controller]")]
     [ApiController]
     public class IteratorController : ControllerBase
     {
@@ -20,9 +20,11 @@ namespace DesignPatterns.Controllers
             };
 
             // inicializa Iterator
-            var iterator = new CarIteratorRepository().GetIterator();
+            var iterator = new IteratorRepository<Car, Guid>().GetIterator();
+
             // adiciona objetos
             iterator.Add(cars);
+
             // realiza algoritimo de iteração
             var car = iterator.GetNext();
 
