@@ -18,6 +18,7 @@
     <ProjectReference Include="..\Command\Command.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Factory\Factory.csproj" />
+    <ProjectReference Include="..\Iterator\Iterator.csproj" />
   </ItemGroup>
 
 </Project>
