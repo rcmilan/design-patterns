@@ -9,6 +9,8 @@ namespace Mediator.Mediators
     {
         private List<BaseModel<T>> _models;
 
+        // o mediator é o intermediário entre várias classes
+
         public ConcreteMediator()
         {
             _models = new List<BaseModel<T>>();
@@ -16,12 +18,13 @@ namespace Mediator.Mediators
 
         public BaseModel<T> Read(BaseModel<T> model)
         {
+            // retorna objeto, se existir na lista
             return model == null ? null : _models.FirstOrDefault(m => m.Id.Equals(model.Id));
         }
 
         public void Store(BaseModel<T> model)
         {
-            _models.Add(model);
+            _models.Add(model); // guarda objetos
         }
     }
 }

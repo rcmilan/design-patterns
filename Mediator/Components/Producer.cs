@@ -8,6 +8,7 @@ namespace Mediator.Components
     {
         public Producer(IMediator<T> mediator)
         {
+            // só se acopla com o mediator
             this.mediator = mediator;
         }
 

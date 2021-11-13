@@ -10,6 +10,7 @@ namespace Mediator.Components
 
         public Consumer(IMediator<T> mediator)
         {
+            // só se acopla com o mediator
             this.mediator = mediator;
         }
 
