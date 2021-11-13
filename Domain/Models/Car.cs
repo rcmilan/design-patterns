@@ -1,10 +1,11 @@
 ﻿using Domain.Base;
+using Domain.Interfaces;
 using System;
 using System.Drawing;
 
 namespace Domain.Models
 {
-    public class Car : BaseModel<Guid>
+    public class Car : BaseModel<Guid>, ICar
     {
         public Car()
         {
@@ -19,9 +20,20 @@ namespace Domain.Models
             this.Engine = engine;
         }
 
+        public Car(string model, Color color, int year, string engine, string type) : this(model, color, year, engine)
+        {
+            this.Type = type;
+        }
+
         public Color Color { get; set; }
         public string Model { get; set; }
         public int Year { get; set; }
         public string Engine { get; set; }
+        public string Type { get; set; }
+
+        public void Drive()
+        {
+            Console.WriteLine($"{this.Model}: Drive!!!!");
+        }
     }
 }
