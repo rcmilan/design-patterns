@@ -1,7 +1,5 @@
-﻿using ChainOfResponsibility.Base;
-using ChainOfResponsibility.ConcreteHandlers;
+﻿using ChainOfResponsibility.ConcreteHandlers;
 using Domain.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
