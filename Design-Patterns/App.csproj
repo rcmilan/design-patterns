@@ -23,6 +23,8 @@
     <ProjectReference Include="..\Mediator\Mediator.csproj" />
     <ProjectReference Include="..\Memento\Memento.csproj" />
     <ProjectReference Include="..\Observer\Observer.csproj" />
+    <ProjectReference Include="..\Prototype\Prototype.csproj" />
+    <ProjectReference Include="..\Singleton\Singleton.csproj" />
     <ProjectReference Include="..\State\State.csproj" />
     <ProjectReference Include="..\Strategy\Strategy.csproj" />
     <ProjectReference Include="..\TemplateMethod\TemplateMethod.csproj" />
