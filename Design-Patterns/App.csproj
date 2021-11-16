@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AbstractFactory\AbstractFactory.csproj" />
     <ProjectReference Include="..\Adapter\Adapter.csproj" />
+    <ProjectReference Include="..\Bridge\Bridge.csproj" />
     <ProjectReference Include="..\Builder\Builder.csproj" />
     <ProjectReference Include="..\ChainOfResponsibility\ChainOfResponsibility.csproj" />
     <ProjectReference Include="..\Command\Command.csproj" />
