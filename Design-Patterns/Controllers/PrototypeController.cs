@@ -3,7 +3,7 @@ using Prototype.Models;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("creational/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class PrototypeController : ControllerBase
     {

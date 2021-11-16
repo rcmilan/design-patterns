@@ -5,7 +5,7 @@ using Visitor.Visitors;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("behavioral/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class VisitorController : ControllerBase
     {

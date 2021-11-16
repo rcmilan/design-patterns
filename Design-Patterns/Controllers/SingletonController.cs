@@ -4,7 +4,7 @@ using Singleton;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class SingletonController : ControllerBase
     {

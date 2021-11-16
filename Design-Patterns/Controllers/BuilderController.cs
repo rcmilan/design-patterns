@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("creational/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class BuilderController : ControllerBase
     {

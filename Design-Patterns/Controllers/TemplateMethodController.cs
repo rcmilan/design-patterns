@@ -4,7 +4,7 @@ using TemplateMethod;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("behavioral/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class TemplateMethodController : ControllerBase
     {

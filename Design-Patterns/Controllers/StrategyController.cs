@@ -4,7 +4,7 @@ using Strategy.Strategies;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("behavioral/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class StrategyController : ControllerBase
     {

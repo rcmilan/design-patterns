@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("behavioral/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class IteratorController : ControllerBase
     {

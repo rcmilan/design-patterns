@@ -5,7 +5,7 @@ using State.States;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("behavioral/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class StateController : ControllerBase
     {

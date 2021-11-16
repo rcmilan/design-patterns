@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CompositeController : ControllerBase
     {

@@ -5,7 +5,7 @@ using Observer.Subjects;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("behavioral/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ObserverController : ControllerBase
     {

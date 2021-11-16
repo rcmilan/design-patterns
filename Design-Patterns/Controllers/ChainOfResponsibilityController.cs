@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("behavioral/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ChainOfResponsibilityController : ControllerBase
     {

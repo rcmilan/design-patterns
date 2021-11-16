@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("structural/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class AdapterController : ControllerBase
     {

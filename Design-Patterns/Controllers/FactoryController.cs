@@ -9,7 +9,7 @@ using System.Drawing;
 
 namespace DesignPatterns.Controllers
 {
-    [Route("creational/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class FactoryController : ControllerBase
     {
