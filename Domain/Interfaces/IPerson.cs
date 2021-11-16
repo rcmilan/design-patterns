@@ -3,5 +3,6 @@
     public interface IPerson
     {
         // Interface da AbstractFactory
+        // interface do Builder
     }
 }
