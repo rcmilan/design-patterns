@@ -20,6 +20,8 @@
     <ProjectReference Include="..\Factory\Factory.csproj" />
     <ProjectReference Include="..\Iterator\Iterator.csproj" />
     <ProjectReference Include="..\Mediator\Mediator.csproj" />
+    <ProjectReference Include="..\Memento\Memento.csproj" />
+    <ProjectReference Include="..\Observer\Observer.csproj" />
   </ItemGroup>
 
 </Project>

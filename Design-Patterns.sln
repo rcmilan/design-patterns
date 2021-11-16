@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "Design-Patterns\App.csproj", "{33CFE9D0-84F4-43DA-AEDD-5E5855FC54DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App", "Design-Patterns\App.csproj", "{33CFE9D0-84F4-43DA-AEDD-5E5855FC54DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{BCFE446A-A016-42B2-820E-E92D055FA84D}"
 EndProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{212779AB-22CF-4990-AC12-AD134466BD4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{AD9ACD1E-9B59-4568-8C21-4E429A1C0426}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{AD9ACD1E-9B59-4568-8C21-4E429A1C0426}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{1CED0EE4-3684-4280-85F1-DA40664A8B04}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator", "Mediator\Mediator.csproj", "{043D4189-3B03-4980-AD0F-9869D6764BE9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memento", "Memento\Memento.csproj", "{1E6E125F-3FCF-4A75-B488-12D5A6A7E127}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer", "Observer\Observer.csproj", "{26F6A6D0-788E-4ECB-A5FC-1037323FC63C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{1E6E125F-3FCF-4A75-B488-12D5A6A7E127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E6E125F-3FCF-4A75-B488-12D5A6A7E127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E6E125F-3FCF-4A75-B488-12D5A6A7E127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F6A6D0-788E-4ECB-A5FC-1037323FC63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F6A6D0-788E-4ECB-A5FC-1037323FC63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F6A6D0-788E-4ECB-A5FC-1037323FC63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F6A6D0-788E-4ECB-A5FC-1037323FC63C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{30B3135D-2741-46B5-8118-997075F72B8C} = {212779AB-22CF-4990-AC12-AD134466BD4C}
 		{043D4189-3B03-4980-AD0F-9869D6764BE9} = {212779AB-22CF-4990-AC12-AD134466BD4C}
 		{1E6E125F-3FCF-4A75-B488-12D5A6A7E127} = {212779AB-22CF-4990-AC12-AD134466BD4C}
+		{26F6A6D0-788E-4ECB-A5FC-1037323FC63C} = {212779AB-22CF-4990-AC12-AD134466BD4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A3D1416-A30B-4C9C-9C89-FCFCF32D2BEA}
