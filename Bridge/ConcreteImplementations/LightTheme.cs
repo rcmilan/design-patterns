@@ -1,9 +1,13 @@
 using Bridge.Implementations;
+using System.Drawing;
 
 namespace Bridge.ConcreteImplementations
 {
     public class LightTheme : ITheme
     {
-        public string GetColor() => "Light Blue";
+        public Color GetColor()
+        {
+            return Color.LightGray;
+        }
     }
 }

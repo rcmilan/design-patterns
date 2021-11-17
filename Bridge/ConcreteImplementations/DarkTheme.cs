@@ -1,9 +1,13 @@
 using Bridge.Implementations;
+using System.Drawing;
 
 namespace Bridge.ConcreteImplementations
 {
     public class DarkTheme : ITheme
     {
-        public string GetColor() => "Black";
+        public Color GetColor()
+        {
+            return Color.Black;
+        }
     }
 }

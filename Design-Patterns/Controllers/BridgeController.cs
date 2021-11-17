@@ -28,7 +28,7 @@ namespace DesignPatterns.Controllers
                     selectedTheme = new GreenTheme();
                     break;
                 default:
-                    throw new System.Exception("Esquema de cores não encontrado");
+                    throw new Exception("Esquema de cores não encontrado");
             }
 
             // Bike recebe a interface ITheme
@@ -39,23 +39,13 @@ namespace DesignPatterns.Controllers
         [HttpGet("{theme}/Furniture")]
         public Furniture GetFurniture([FromRoute] string theme)
         {
-            ITheme selectedTheme;
-
-            switch (theme)
+            ITheme selectedTheme = theme switch
             {
-                case "Dark":
-                    selectedTheme = new DarkTheme();
-                    break;
-                case "Light":
-                    selectedTheme = new LightTheme();
-                    break;
-                case "Green":
-                    selectedTheme = new GreenTheme();
-                    break;
-                default:
-                    throw new System.Exception("Esquema de cores não encontrado");
-            }
-
+                "Dark" => new DarkTheme(),
+                "Light" => new LightTheme(),
+                "Green" => new GreenTheme(),
+                _ => throw new Exception("Esquema de cores não encontrado"),
+            };
             return new Furniture(selectedTheme);
         }
     }
