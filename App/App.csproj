@@ -28,6 +28,7 @@
     <ProjectReference Include="..\Iterator\Iterator.csproj" />
     <ProjectReference Include="..\Mediator\Mediator.csproj" />
     <ProjectReference Include="..\Memento\Memento.csproj" />
+    <ProjectReference Include="..\Monoid\Monoid.csproj" />
     <ProjectReference Include="..\Observer\Observer.csproj" />
     <ProjectReference Include="..\Prototype\Prototype.csproj" />
     <ProjectReference Include="..\Proxy\Proxy.csproj" />
