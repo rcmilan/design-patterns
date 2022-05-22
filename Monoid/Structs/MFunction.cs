@@ -5,7 +5,7 @@
         public Func<T, T> Run;
 
         public MFunction(Func<T, T> fn) => Run = fn;
-        
+
         public MFunction<T> Then(MFunction<T> next)
         {
             var runCopy = Run;
