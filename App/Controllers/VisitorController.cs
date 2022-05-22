@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Visitor;
+using Visitor.Base;
 using Visitor.Components;
 using Visitor.Visitors;
 
@@ -13,17 +14,17 @@ namespace DesignPatterns.Controllers
         public void Get()
         {
 
-            List<IComponent> components = new()
+            List<Place> places = new()
             {
-                new ConcreteComponentA(),
-                new ConcreteComponent1()
+                new Park(),
+                new Home()
             };
 
-            var visitor1 = new ConcreteVisitor1();
-            Client.ClientCode(components, visitor1);
+            var citizen = new Citizen();
+            Client.VisitPlaces(places, citizen);
 
-            var visitor2 = new ConcreteVisitorA();
-            Client.ClientCode(components, visitor2);
+            var tourist = new Tourist();
+            Client.VisitPlaces(places, tourist);
         }
     }
 }

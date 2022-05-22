@@ -1,12 +1,14 @@
-﻿namespace Visitor;
+﻿using Visitor.Base;
+
+namespace Visitor;
 
 public class Client
 {
-    public static void ClientCode(List<IComponent> components, IVisitor visitor)
+    public static void VisitPlaces(List<Place> places, IVisitor visitor)
     {
-        foreach (var component in components)
+        foreach (var place in places)
         {
-            component.Accept(visitor);
+            place.Accept(visitor);
         }
     }
 }
