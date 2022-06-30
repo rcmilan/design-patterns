@@ -59,7 +59,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "Proxy\Proxy.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interpreter", "Interpreter\Interpreter.csproj", "{C8817847-A684-4F02-93CD-555A3EE88DA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoid", "Monoid\Monoid.csproj", "{82C0A789-73F3-4E03-BE1F-29659C966FD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monoid", "Monoid\Monoid.csproj", "{82C0A789-73F3-4E03-BE1F-29659C966FD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Currying", "Currying\Currying.csproj", "{1332D856-4B2F-4E7D-B37E-2B940D081BAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{82C0A789-73F3-4E03-BE1F-29659C966FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82C0A789-73F3-4E03-BE1F-29659C966FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82C0A789-73F3-4E03-BE1F-29659C966FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1332D856-4B2F-4E7D-B37E-2B940D081BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1332D856-4B2F-4E7D-B37E-2B940D081BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1332D856-4B2F-4E7D-B37E-2B940D081BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1332D856-4B2F-4E7D-B37E-2B940D081BAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,6 +206,7 @@ Global
 		{3D026848-CD10-427D-90F6-C7D174860D08} = {9822C46F-2CED-49E0-B174-E08EB7499C91}
 		{C8817847-A684-4F02-93CD-555A3EE88DA8} = {9822C46F-2CED-49E0-B174-E08EB7499C91}
 		{82C0A789-73F3-4E03-BE1F-29659C966FD9} = {9822C46F-2CED-49E0-B174-E08EB7499C91}
+		{1332D856-4B2F-4E7D-B37E-2B940D081BAA} = {212779AB-22CF-4990-AC12-AD134466BD4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A3D1416-A30B-4C9C-9C89-FCFCF32D2BEA}
